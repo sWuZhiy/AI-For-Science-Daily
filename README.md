@@ -1,65 +1,67 @@
-# AI-For-Science-Daily
+# 🔬 AI for Science Daily (科研AI每日一练)
+
 AI for Science（AI+科研）日常学习笔记+实操代码
 
-[![Zhihu](https://img.shields.io/badge/知乎专栏-AI科研加速器-0084FF?logo=zhihu)](https://www.zhihu.com/people/你的知乎ID)
-[![Python](https://img.shields.io/badge/Python-3.8%2B-blue?logo=python)](https://www.python.org/)
-> **Linking AI Theory to Academic Practice.**
->
-> 这是一个面向科研人员（Researcher/Student）的 AI 知识库与工具箱。本项目是[**知乎专栏《AI 科研加速器》**](你的知乎专栏链接)的配套代码仓库。
+[![Python](https://img.shields.io/badge/python-3.8+-green.svg)](https://www.python.org/)
+[![Zhihu](https://img.shields.io/badge/知乎-专栏链接-0084FF)](你的知乎专栏链接)（可替换）
 
----
+## 📖 项目介绍
+这是一个面向科研人员（Researcher/Student）的AI知识库，配套知乎专栏《[知乎专栏《AI 科研加速器》]》，旨在通过 **"每日一个知识点 + 代码实战"** 的形式，帮助大家理解大模型原理，并将其高效应用到论文写作、文献分析、数据处理和实验复现中。
 
-## 📖 项目简介 (Introduction)
+**核心目标：** 让AI成为科研加速器，节省时间、提升效率、规避风险，适配科研人员无访问障碍使用需求。
 
-在 AI 爆发的时代，科研范式正在发生改变。本项目旨在探索AI与科研的结合点：
+**更新频率：** 每日/每周更新（可替换）
+**配套专栏：** [点击跳转知乎专栏](你的知乎专栏链接)（可替换，核心引流入口）
 
-1.  **操作方式：** 用通俗的语言+代码演示，拆解 Transformer、RAG、Fine-tuning 等核心概念。
-2.  **科研提效：** 提供经过验证的 **Academic Prompts**（润色、降重、审稿回复）。
-3.  **代码实战：** 提供python代码实现。
-
----
-
-## 🗂️ 学习路线与目录 (Roadmap & Contents)
-
-### Phase 1: 理论基石与直觉构建
-
-| Day | 📝 主题 (Topic) | 🔗 知乎文章 | 💻 代码/演示 (Code) | 🏷️ 标签 |
+## 🗂️ 内容导航 (Table of Contents)
+| Day | Topic (主题) | 知乎文章 | Code (代码) | Tags |
 | :--- | :--- | :--- | :--- | :--- |
-| **01** | **Transformer** 核心架构拆解 | [知乎链接](...) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](notebooks/day01_transformer.ipynb) | `DeepLearning` |
-| **02** | **Tokenization** 分词机制与陷阱 | [知乎链接](...) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](notebooks/day02_tokenization.ipynb) | `NLP` `Preprocessing` |
-| **03** | **Embedding** 向量化与语义搜索 | [知乎链接](...) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](notebooks/day03_embedding.ipynb) | `RAG` |
+| **01** | Transformer 原理详解 | [点击阅读](Day01知乎文章链接)（可替换） | [Notebook](./Day01_Transformer/) | `NLP` `Architecture` |
+| **02** | Tokenization 分词机制 | [点击阅读](Day02知乎文章链接)（可替换） | [Script](./Day02_Tokenization/) | `Preprocessing` |
+| **03** | RAG 检索增强生成 | [点击阅读](Day03知乎文章链接)（可替换） | [Demo](./Day03_RAG/) | `Application` |
+| ... | ... | ... | ... | ... |（后续Day逐步补充，可替换）
 
-### Phase 2: 科研生产力工具 (Prompt Engineering)
+## 🛠️ 如何使用
+### 方法一：本地运行（适合有Python环境的用户）
+1. Clone 本仓库：
+   ```bash
+   git clone https://github.com/你的用户名/AI-For-Science-Daily.git（可替换）
+   ```
+2. 进入仓库目录：
+   ```bash
+   cd AI-For-Science-Daily
+   ```
+3. 安装依赖：
+   ```bash
+   pip install -r requirements.txt
+   ```
+4. 运行对应文件夹下的Jupyter Notebook或Python脚本。
 
-| Day | 📝 主题 (Topic) | 🔗 知乎文章 | 🛠️ 提示词模版 (Prompt) | 🏷️ 标签 |
-| :--- | :--- | :--- | :--- | :--- |
-| **08** | **Academic Polishing** 论文润色 | [知乎链接](...) | [Prompt Template](prompts/polishing.md) | `Writing` |
-| **09** | **Rebuttal** 审稿意见回复 | [知乎链接](...) | [Prompt Template](prompts/rebuttal.md) | `Review` |
-| **10** | **Literature Review** 文献综述 | [知乎链接](...) | [Agent Demo](notebooks/day10_lit_review_agent.ipynb) | `Reading` |
+### 方法二：云端运行（无需配置环境，中国大陆直接访问）
+选用2款适配科研场景的中国大陆云端平替（二选一即可，均支持Jupyter Notebook、免费可用）：
+1.  豆包编程（优先推荐）：打开豆包编程（https://dbcoding.ai-kit.cn/），点击「导入GitHub仓库」，粘贴本仓库地址，即可一键加载所有Notebook并运行，支持AI代码解释、调试，贴合科研编程需求。
+2.  百度飞桨AI Studio：打开AI Studio（https://aistudio.baidu.com/），注册登录后，点击「导入项目」→「GitHub导入」，粘贴对应Day的Notebook链接，即可免费运行，支持GPU加速（适合深度学习相关代码）。
+👉 所有Day的云端运行链接汇总：[Cloud_Links.md](./Cloud_Links.md)（可直接点击跳转，无需手动粘贴）
 
-*(持续更新中，欢迎 Star ⭐ 关注)*
+## 🤝 参与贡献
+如果你发现代码有Bug、有更好的Prompt技巧，或想补充某一学科的AI应用案例，欢迎提交 **Pull Request** 或 **Issue**。让我们一起构建最实用的科研AI社区！
 
----
+## 📌 加分技巧
+1. 所有代码均经过测试，可直接运行，若遇到版本兼容问题，可参考requirements.txt中的版本说明。
+2. Notebook中包含详细的代码注释和原理说明，适合边看边学。
+3. 定期更新依赖包，确保代码适配最新版本的AI库（如Transformers、Torch等）及云端平台（豆包编程/AI Studio）。
+4. 豆包编程支持圈选代码AI解释、优化，科研中遇到代码调试难题可直接使用该功能提升效率。
 
-## 🛠️ 安装与使用 (Installation)
+## 👤 关于作者
+* **知乎：** [你的知乎名称](你的知乎个人主页链接)（可替换）
+* **研究方向：** [你的研究领域]（可替换，增强科研可信度）
+* **GitHub：** [你的GitHub主页链接]（可替换）
 
-如果你想在本地运行本项目的代码：
-
-1.  **Clone 仓库**
-    ```bash
-    git clone [https://github.com/YourUsername/AI-For-Science-Notes.git](https://github.com/YourUsername/AI-For-Science-Notes.git)
-    cd AI-For-Science-Notes
-    ```
-
-2.  **安装依赖**
-    ```bash
-    pip install -r requirements.txt
-    ```
-
-3.  **启动 Jupyter Notebook**
-    ```bash
-    jupyter notebook
-    ```
+## ⚠️ 注意事项
+1. 本项目仅用于科研学习，请勿用于商业用途。
+2. 科研过程中，需坚持「Human-in-the-loop」（人在回路），仔细核实AI生成的代码、文本和数据，避免学术不端。
+3. 请勿上传未发表的实验数据、核心代码到公有平台，保护科研成果。
+4. 使用云端平台时，建议优先选择私有项目模式，保护个人科研代码隐私。
 
 ---
 
