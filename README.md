@@ -3,7 +3,7 @@
 AI for Science（AI+科研）日常学习笔记+实操代码
 
 [![Python](https://img.shields.io/badge/python-3.8+-green.svg)](https://www.python.org/)
-[![Zhihu](https://img.shields.io/badge/知乎-专栏链接-0084FF)](你的知乎专栏链接)（可替换）
+[![Zhihu](https://img.shields.io/badge/知乎-专栏链接-0084FF)](你的知乎专栏链接)
 
 ## 📖 项目介绍
 这是一个面向科研人员（Researcher/Student）的AI知识库，配套知乎专栏《[知乎专栏《AI 科研加速器》]》，旨在通过 **"每日一个知识点 + 代码实战"** 的形式，帮助大家理解大模型原理，并将其高效应用到论文写作、文献分析、数据处理和实验复现中。
